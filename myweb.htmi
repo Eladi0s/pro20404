@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>메뉴가 2개인 웹페이지</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial, sans-serif;
+		}
+
+		body {
+			background-color: #f2f2f2;
+		}
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			display: block;
+		}
+
+		nav ul li a:hover {
+			background-color: #555;
+		}
+
+		.main-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 500px;
+			font-size: 48px;
+			font-weight: bold;
+			color: #333;
+		}
+
+		.main-content p {
+			margin-top: 20px;
+			font-size: 24px;
+			font-weight: normal;
+			color: #777;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">메뉴1</a></li>
+			<li><a href="#">메뉴2</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">로그인</a></li>
+			<li><a href="#">회원가입</a></li>
+		</ul>
+	</nav>
+	<div class="main-content">
+		<h1>메뉴가 2개인 웹페이지</h1>
+		<p>여기에는 본문 내용이 들어갑니다.</p>
+	</div>
+</body>
+</html>
